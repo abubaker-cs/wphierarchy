@@ -8,38 +8,38 @@
 </head>
 <body <?php body_class(); ?>>
 
-  <a href="#content" class="skip-link screen-reader-text">
-    <?php esc_html_e( 'Skip to content', 'wphierarchy' ); ?>
-  </a>
+<a href="#content" class="skip-link screen-reader-text">
+    <?php esc_html_e('Skip to content', 'wphierarchy'); ?>
+</a>
 
-  <header id="masthead" class="site-header" role="banner">
+<header id="masthead" class="site-header" role="banner">
 
     <div class="site-branding">
 
-      <!-- Title -->
-      <p class="site-title">
-        <a href="<?php echo esc_url( home_url( '/' ) ) ;?>" rel="home">
-          <?php bloginfo( 'name' ); ?>
-        </a>
-      </p>
+        <!-- Title -->
+        <p class="site-title">
+            <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
+                <?php bloginfo('name'); ?>
+            </a>
+        </p>
 
-      <!-- Description -->
-      <p class="site-description" >
-        <?php bloginfo( 'description' ); ?>
-      </p>
+        <!-- Description -->
+        <p class="site-description">
+            <?php bloginfo('description'); ?>
+        </p>
 
     </div>
 
     <!-- Main Menu -->
     <nav id="site-navigation" class="main-navigation" role="navigation">
-      <?php
+        <?php
         $args = [
-          'theme_location' => 'main-menu'
+            'theme_location' => 'main-menu'
         ];
-        wp_nav_menu( $args );
-      ?>
+        wp_nav_menu($args);
+        ?>
     </nav>
 
-  </header>
+</header>
 
-  <div id="content" class="site-content">
+<div id="content" class="site-content">

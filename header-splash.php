@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <?php wp_head(); ?>
-  </head>
-  <body <?php body_class(); ?>>
+</head>
+<body <?php body_class(); ?>>
 
-    <div id="page">
+<div id="page">
 
-      <a href="#content" class="skip-link screen-reader-text">
-        <?php esc_html_e( 'Skip to content', 'wphierarchy' ); ?>
-      </a>
+    <a href="#content" class="skip-link screen-reader-text">
+        <?php esc_html_e('Skip to content', 'wphierarchy'); ?>
+    </a>
 
-      <header id="masthead" class="site-header" role="banner">
+    <header id="masthead" class="site-header" role="banner">
 
         <div class="notice">
-          <p>NEW - Lorem to the sell thisum!</p>
+            <p>NEW - Lorem to the sell thisum!</p>
         </div>
 
         <div class="site-branding">
-          <p class="site-title">
-            <?php bloginfo( 'name' ); ?>
-          </p>
-          <p class="site-description" >
-            <?php bloginfo( 'description' ); ?>
-          </p>
+            <p class="site-title">
+                <?php bloginfo('name'); ?>
+            </p>
+            <p class="site-description">
+                <?php bloginfo('description'); ?>
+            </p>
         </div>
 
-      </header>
+    </header>
 
-      <div id="content" class="site-content">
+    <div id="content" class="site-content">
