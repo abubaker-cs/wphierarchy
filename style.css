@@ -27,6 +27,10 @@ body.page-id-1098{
   background-color: pink;
 }
 
+body.error404 {
+  background-color: #ff476a;
+}
+
 h1, h2, h3, h4, h5, h6,
 .site-title {
   font-family: "Varela Round", sans-serif;
