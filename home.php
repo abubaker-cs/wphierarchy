@@ -3,12 +3,14 @@
 <!-- Primary Content -->
 <div id="primary" class="content-area">
 
-  <main id="main" class="site-main" role="main">
+    <main id="main" class="site-main" role="main">
+
+      <h1><?php wp_title(''); ?></h1>
 
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-        <!-- Display Content | Auto select post-format -->
-        <?php get_template_part('template-parts/content', get_post_format() ); ?>
+        <!-- Display Content -->
+        <?php get_template_part('template-parts/content-posts', get_post_format() ); ?>
 
     <?php endwhile; else : ?>
 
@@ -17,7 +19,12 @@
 
     <?php endif; ?>
 
-    <p>Template: single.php | For Posts</p>
+
+    <!-- Pagination -->
+    <?php echo paginate_links(); ?>
+
+
+    <p>Template: home.php | Blog (your latest posts) </p>
 
     </main>
 
