@@ -15,7 +15,7 @@
 
     <?php endif; ?>
 
-    <p>Template: index.php | Blog, </p>
+    <p>Template: single.php | For Posts</p>
 
     </main>
 
