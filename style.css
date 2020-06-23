@@ -18,8 +18,13 @@ body {
 }
 
 body.tag-50,
+body.page-id-1096,
 body.category-6 {
   background-color: #a7ff91;
+}
+
+body.page-id-1098{
+  background-color: pink;
 }
 
 h1, h2, h3, h4, h5, h6,
