@@ -15,4 +15,12 @@
     <?php the_content(); ?>
   </div>
 
+  <!-- Check if Comments Exist -->
+  <?php if(comments_open()) : ?>
+
+  <!-- Include Comments -->
+  <?php comments_template(); ?>
+
+  <?php endif; ?>
+
 </article>
