@@ -17,3 +17,7 @@ var_export($post):
 'guid:' CUSTOM LINK
 'post_type' => 'attachment',
 'post_mime_type' => 'image/jpeg',
+
+Allowed MIME Types
+==================
+https://developer.wordpress.org/reference/functions/get_allowed_mime_types/
