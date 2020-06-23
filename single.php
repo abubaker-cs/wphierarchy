@@ -5,8 +5,8 @@
 
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-        <!-- Display Content -->
-        <?php get_template_part('template-parts/content'); ?>
+        <!-- Display Content | Auto select post-format -->
+        <?php get_template_part('template-parts/content', get_post_format() ); ?>
 
     <?php endwhile; else : ?>
 
