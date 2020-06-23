@@ -5,10 +5,14 @@
 
     <main id="main" class="site-main" role="main">
 
-      <h1><?php the_archive_title(); ?></h1>
-      <p><?php the_archive_description(); ?></p>
+      <div class="author-bio">
+        <h1><?php the_archive_title(); ?></h1>
 
-      <hr>
+        <p><?php the_author_meta('description', $post->post_author); ?></p>
+
+      </div>
+
+
 
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -26,7 +30,7 @@
     <?php echo paginate_links(); ?>
 
 
-    <p>Template: archive.php | Categories, Archive, Tags, (Authors) - Keep it generic</p>
+    <p>Author: author.php</p>
 
     </main>
 
