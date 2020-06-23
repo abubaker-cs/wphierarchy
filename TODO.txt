@@ -1,5 +1,19 @@
 Function Examination: wp_nav_menu
+=================================
 https://code.tutsplus.com/tutorials/function-examination-wp_nav_menu--wp-25525
 
 A Date Page:
+===========
 https://developer.wordpress.org/themes/basics/conditional-tags/#a-date-page
+
+Attachment.php
+==============
+- video.php
+- image.php
+- text.php
+
+var_export($post):
+=================
+'guid:' CUSTOM LINK
+'post_type' => 'attachment',
+'post_mime_type' => 'image/jpeg',
