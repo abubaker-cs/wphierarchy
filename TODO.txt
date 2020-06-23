@@ -1,4 +1,5 @@
 Function Examination: wp_nav_menu
 https://code.tutsplus.com/tutorials/function-examination-wp_nav_menu--wp-25525
 
-Today I will complete Part 2 of WP Hierarchy section.
+A Date Page:
+https://developer.wordpress.org/themes/basics/conditional-tags/#a-date-page
