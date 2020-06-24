@@ -23,6 +23,10 @@ body.category-6 {
   background-color: #a7ff91;
 }
 
+body.postid-1368 {
+  background-color: #AB8BED;
+}
+
 body.page-id-1098{
   background-color: pink;
 }
@@ -190,6 +194,10 @@ article.post {
 
 .archive article.portfolio:nth-child(even) {
   margin-right: 5%;
+}
+
+.reference{
+  clear: both;
 }
 
 .form-submit input#submit,
