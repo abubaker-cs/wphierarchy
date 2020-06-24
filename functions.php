@@ -16,7 +16,12 @@ add_theme_support('starter-content');
 // Function to Load CSS
 function wphierarchy_enqueue_styles()
 {
-    wp_enqueue_style('main-css', get_stylesheet_directory_uri() . '/style.css', [], time(), 'all');
+    // Font: Varela Round
+    wp_enqueue_style('varela-font-css', 'https://fonts.googleapis.com/css2?family=Varela+Round&display=swap', [], '', 'all');
+
+    // change time(), to '' once development will be completed
+    wp_enqueue_style('main-css', get_stylesheet_directory_uri() . '/style.css', ['varela-font-css'], time(), 'all');
+    wp_enqueue_style('custom-css', get_stylesheet_directory_uri() . '/assets/css/custom.css', ['main-css'], time(), 'all');
 }
 
 // Load CSS
