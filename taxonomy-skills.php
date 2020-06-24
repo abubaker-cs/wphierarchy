@@ -25,7 +25,9 @@
     <!-- Pagination -->
     <?php echo paginate_links(); ?>
 
-      <p class="reference">Template: archive-portfolio.php | CPT: Portfolio (all)</p>
+      <p class="reference">Template: taxonomy-skills.php | CPT: Portfolio (all)</p>
+
+
 
     </main>
 

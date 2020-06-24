@@ -23,6 +23,12 @@
 
           <?php the_content(); ?>
 
+          <!-- Skills -->
+          <p>
+            Skills:
+            <?php the_terms($post->ID, 'skills'); ?>
+          </p>
+
           <!-- Custom Field -->
           <p>
             <a class="button" href="<?php the_field('url'); ?>" target="_blank">

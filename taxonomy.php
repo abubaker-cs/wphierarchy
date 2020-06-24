@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
 <!-- Primary Content -->
-<div id="primary" class="content-area extended">
+<div id="primary" class="content-area narrow">
 
-  <main id="main" class="site-main" role="main">
+    <main id="main" class="site-main" role="main">
 
       <h1><?php the_archive_title(); ?></h1>
       <p><?php the_archive_description(); ?></p>
@@ -13,7 +13,7 @@
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
         <!-- Display Content -->
-        <?php get_template_part('template-parts/content', 'portfolio' ); ?>
+        <?php get_template_part('template-parts/content-posts', get_post_format() ); ?>
 
     <?php endwhile; else : ?>
 
@@ -25,11 +25,10 @@
     <!-- Pagination -->
     <?php echo paginate_links(); ?>
 
-      <p class="reference">Template: archive-portfolio.php | CPT: Portfolio (all)</p>
+
+    <p class="reference">Template: taxonomy.php</p>
 
     </main>
-
-
 
 </div>
 
