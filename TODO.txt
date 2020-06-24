@@ -21,3 +21,8 @@ var_export($post):
 Allowed MIME Types
 ==================
 https://developer.wordpress.org/reference/functions/get_allowed_mime_types/
+
+jQuery 3
+========
+https://nimblewebdeveloper.com/blog/use-modern-jquery-in-wordpress
+https://digwp.com/2009/06/including-jquery-in-wordpress-the-right-way/
