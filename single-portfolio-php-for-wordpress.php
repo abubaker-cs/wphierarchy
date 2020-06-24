@@ -25,7 +25,7 @@
 
           <!-- Custom Field -->
           <p>
-            <a class="button" href="<?php the_field('url'); ?>" target="_blank">
+            <a class="button" href="<?php the_field('url'); ?>">
               <?php esc_html_e('Visit the Site', 'wphierarchy'); ?>
             </a>
           </p>

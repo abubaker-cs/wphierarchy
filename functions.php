@@ -12,8 +12,9 @@ add_theme_support('custom-logo');
 add_theme_support('customize-selective-refresh-widgets');
 add_theme_support('starter-content');
 
-
+///////////////////////////////
 // Function to Load CSS
+///////////////////////////////
 function wphierarchy_enqueue_styles()
 {
     // Font: Varela Round
@@ -26,6 +27,20 @@ function wphierarchy_enqueue_styles()
 
 // Load CSS
 add_action('wp_enqueue_scripts', 'wphierarchy_enqueue_styles');
+
+
+///////////////////////////////
+// Function to Load JavaScript
+///////////////////////////////
+function wphierarchy_enqueue_scripts()
+{
+    // wp_enqueue_script($handle, $src, $dep, $ver, $in_footer);
+    wp_enqueue_script('theme-js', get_stylesheet_directory_uri() . '/assets/js/theme.js', [], time(), true);
+}
+
+// Load JavaScript
+add_action('wp_enqueue_scripts', 'wphierarchy_enqueue_scripts');
+
 
 // Register Menu Locations
 register_nav_menus([
